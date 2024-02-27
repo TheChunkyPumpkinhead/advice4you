@@ -20,9 +20,14 @@ export default function App() {
       <h1>{advice}</h1>
       {/* this function is called when clicked */}
       <button onClick={getAdvice}>Get Some Killer Advice</button>
-      <p>
-        You have read <strong>{count}</strong> pieces of advice
-      </p>
+      <Message count={count} />
     </div>
+  );
+}
+function Message(props) {
+  return (
+    <p>
+      You have read <strong>{props.count}</strong> pieces of advice
+    </p>
   );
 }
