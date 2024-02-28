@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import "./App.css";
+
 // this is the function for diplaying the advice from getAdvice funtion
 export default function App() {
   const [advice, setAdvice] = useState("");
